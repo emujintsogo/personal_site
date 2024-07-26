@@ -1,0 +1,172 @@
+:root {
+  --text-color: #243c19;
+  --link-color: #267847;
+  --link-hover: #688a3d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  line-height: 100%;
+}
+
+body {
+  background-image: url(./images/IMG_0651.png);
+  background-size: cover;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: #f9efe9;
+  transform: translate(-50%, -50%);
+  width: 83%;
+  height: 86%;
+}
+
+.first-name {
+  font-family: "JetBrains Mono";
+  font-size: 2.95rem;
+  letter-spacing: 0.6rem;
+  padding: 0 0 0 70px;
+  margin-top: -5px;
+}
+
+.last-name h1 {
+  font-family: "Playfair Display";
+  letter-spacing: 0.6rem;
+  font-size: 5.5rem;
+  font-weight: normal;
+  text-align: right;
+  margin-top: -5px;
+}
+
+.last-name {
+  padding-right: 70px;
+}
+
+.kaomoji-and-bio {
+  display: flex;
+  margin-top: 30px;
+  padding-right: 30px;
+}
+
+.kaomoji h2 {
+  font-family: "JetBrains Mono";
+  font-style: italic;
+  text-align: right;
+  font-size: 2.7rem;
+  letter-spacing: -0.15rem;
+  font-weight: 400;
+}
+
+.bio p {
+  font-family: "VT323";
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  line-height: 132%;
+}
+
+.bio {
+  width: 29%;
+  margin-left: 3%;
+}
+
+.kaomoji {
+  width: 66%;
+  align-self: flex-end;
+}
+
+.bio a {
+  color: var(--link-color);
+}
+
+.current-and-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 8% 5% 5%;
+}
+
+.current-and-links h3 {
+  font-family: "JetBrains Mono";
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.links {
+  font-size: 2rem;
+}
+
+.links i {
+  margin-left: 5px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: end;
+  font-family: "JetBrains Mono";
+  padding: 30px 40px 0 0;
+}
+
+.navigation ul {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navigation li {
+  font-size: 1rem;
+}
+
+a:hover,
+i:hover {
+  color: var(--link-hover);
+}
+
+@media screen and (max-width: 600px) {
+  * {
+    margin-top: 10%;
+  }
+
+  body {
+    background-image: none;
+    background-color: #f9efe9;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .content-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .bio,
+  .kaomoji {
+    width: 100%;
+  }
+
+  .kaomoji-and-bio {
+    flex-direction: column-reverse;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .bio p {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .navigation {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .current-and-links {
+    flex-direction: column;
+  }
+}
