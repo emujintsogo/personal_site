@@ -12,7 +12,7 @@
 }
 
 body {
-  background-image: url(./images/IMG_0651.png);
+  background-image: url(./images/IMG_0651-min.png);
   background-size: cover;
 }
 
@@ -137,16 +137,27 @@ i:hover {
     background-color: #f9efe9;
     width: 100%;
     padding: 0 10px;
+    overflow: hidden;
+    margin-top: 0;
   }
 
   .content-container {
     width: 100%;
     text-align: center;
+    margin-top: 0;
   }
 
   .bio,
   .kaomoji {
     width: 100%;
+  }
+
+  .first-name h1 {
+    font-size: 3rem;
+  }
+
+  .last-name h1 {
+    font-size: 3rem;
   }
 
   .kaomoji-and-bio {
